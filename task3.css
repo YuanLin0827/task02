@@ -1,83 +1,111 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0em;
+    padding: 0em;
 }
-body{
-    background-color: #5897fb;
+.container{
 
 }
-.wrapper{
-    position: relative;
-    width:100%;
-    height: 800px;
-    margin: 0px auto;
-
-}
-.heading{
-    position: absolute;
-    margin: 0px auto;
-    height: 80px;
+body {
+    background-color: #00CCFF;
     width: 100%;
-    background-color:#212121;
-    text-align: center ;
-    line-height: 80px;
-    overflow: hidden;
-    top: 0px;
-    font-size: 35px ;
+    height: 800px;
+
+}
+
+.head{
+    height: 2.5em;;
+    width: 100%;
+    background-color: #2e3d54;
+    text-align: center;
+    font-size: 1.9em;
 }
 .fh{
-    width: auto;
-    height: auto;
+    font-size: 1.1em;
     float: left;
-    position: absolute;
-    top: 10%;
-    left: 2%;
+    position: relative;
+    left: 0.6em;;
+    top: 0.6em;;;
 
 }
-.cd{
+#cd{
     float: right;
-    position: absolute;
-    top: 10%;
-    right: 2%;
-}
-.tc{
     position: relative;
-    top: 15%;
-    left: 2%;
+    margin-left: 1em;
+    right: 0.7em;
+    top: 0.7em;
 }
-.pttz{
-    position: absolute;
-    top: 30%;
-    left: 40% ;
-
+#mj{
+    padding-top: 15px;
 }
-p.text{
-    position: relative;
-    font-size: 2em;
-    left: -30%;
-    margin: 0 7rem;
-    top; 15%;
-}
-.ptt{
-    position: relative;
-    float: left;
-    bottom: -70%;
-    left: 30%;
 
-
-}
-.zr{
-    position: relative;
-    float: left;
-    bottom: -70%;
-    right: -55%;
-
-
-
-}
 a:link,a:visited{
     font-weight: bold;
     color:white;
     text-align: center;
     text-decoration: none;
 }
+.body{
+    height: 700px;
+    width: 100%;
+}
+#tc{
+    display:block;
+    width: auto;
+    float: left;
+    margin: 20px;
+
+
+}
+#pttz{
+    clear: both;
+    display:block;
+    top: 15%;
+    margin: 10px auto;
+}
+#text{
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.5em;
+
+}
+#ptt{
+    display:block;
+    float: left;
+    position: relative;
+    left:30%;
+    bottom:-10%;
+
+}
+#zr{
+    display:block;
+    float: right;
+    position: relative;
+    right:30%;
+    bottom:-10%;
+
+}
+@media screen and (max-width: 580px) {
+    html {
+        font-size: 55%;
+    }
+    .container{
+        height: 600px;
+    }
+    body{
+        height: 600px;;
+    }
+    .head {
+        height: 7%;
+    }
+    #text {
+        top: 20%;
+    }
+    .fh img {
+        width: 10px;
+    }
+    #tc img, #cd img, #pttz img {
+        width: 40px;
+    }
+    #ptt img, #zr img {
+        width: 45px;
+    }
